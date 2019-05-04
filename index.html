@@ -10,6 +10,7 @@
 <body bgcolor="#0a0a0a">
 
 <style>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 
 body {
@@ -55,7 +56,6 @@ var outline = false;
 var min_score = 0;
 var max_score = 1;
 
-var color = d3.scale.linear()
   .domain([min_score, (min_score+max_score)/2, max_score])
   .range(["lime", "yellow", "red"]);
 
