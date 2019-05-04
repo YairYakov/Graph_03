@@ -81,11 +81,7 @@ svg.style("cursor","move");
 
 d3.json("graph.json", function(error, graph) {
 
-d3.csv("file.csv", function(error, data) {
-  if (error) throw error;
-  console.log(data);
 
-	
 var linkedByIndex = {};
     graph.links.forEach(function(d) {
 	linkedByIndex[d.source + "," + d.target] = true;
